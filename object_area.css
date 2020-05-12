@@ -1,0 +1,43 @@
+.btn-gradient-simple {
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  border-radius: 3px;
+  font-weight: bold;
+  color: #fff;
+  background-image: linear-gradient(45deg, #709dff 0%, #b0c9ff 100%);
+  transition: 0.4s;
+}
+
+.btn-gradient-simple:hover {
+  background-image: linear-gradient(45deg, #709dff 50%, #b0c9ff 100%);
+}
+
+
+#Object label.objectLabel {
+  display: inline-block;
+  width: 50px;
+  height: 12px;
+  padding: 6px 12px;
+  font-size: 14px;
+  color: #709dff;
+}
+
+#Object input.objectValue {
+  display: inline-block;
+  width: 75%;
+  height: 12px;
+  padding: 6px 12px;
+  font-size: 14px;
+  color: #555;
+}
+
+#Object input.delBtn {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ccc;
+  background: #fff;
+  border-radius: 5px;
+  padding: 0;
+  margin: 0;
+}

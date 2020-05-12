@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>MapEditor</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="setting_area.css">
+    <link rel="stylesheet" type="text/css" href="object_area.css">
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<body>
+    <h1>MapEditor</h1>
+    <h2>Map</h2>
+    <div id="MapArea">
+        <canvas id="canvas" width="640" height="480"></canvas>
+    </div>
+    <h2>Config</h2>
+    <div id="configContainer">
+        <div id="SettingArea">
+            <h3>Setting</h3>
+            <input id="ArrowObject" type="radio" name="setting_tab_item" checked>
+            <label class="setting_tab_item" for="ArrowObject">矢印</label>
+            <input id="LineObject" type="radio" name="setting_tab_item">
+            <label class="setting_tab_item" for="LineObject">線</label>
+            <input id="PointObject" type="radio" name="setting_tab_item">
+            <label class="setting_tab_item" for="PointObject">点</label>
+            <div class="tab_content" id="Arrow_content">
+                <form id="arrowForm">
+                    <div id="ArrowStartSetting">
+                        <label for="arrowStart">開始位置：</label>
+                        <input type="text" name="arrowStart" id="arrowStart">
+                        <input type="button" value="clear" class="clearBtn">
+                    </div>
+                    <div id="ArrowMidSetting">
+                        <!-- ToBe : Midpoint function -->
+                    </div>
+                    <div id="ArrowEndSetting">
+                        <label for="arrowEnd">目標位置：</label>
+                        <input type="text" name="arrowEnd" id="arrowEnd">
+                        <input type="button" value="clear" class="clearBtn">
+                    </div>
+                    <a class="btn-add" id="btnArrorw">Add</a>
+                </form>
+            </div>
+            <div class="tab_content" id="Line_content">
+                <p>線</p>
+                <a class="btn-add" id="btnLine">Add</a>
+            </div>
+            <div class="tab_content" id="Point_content">
+                <p>点</p>
+                <a class="btn-add" id="btnPoint">Add</a>
+            </div>
+        </div>
+        <div id="ObjectArea">
+            <h3>Object</h3>
+            <a href="#" class="btn-gradient-simple">Reflash</a>
+            <div id="Object"></div>
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>

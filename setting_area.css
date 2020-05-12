@@ -1,0 +1,58 @@
+.setting_tab_item {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 50px;
+  display: block;
+  float: left;
+  width: calc(100% / 3);
+  height: 50px;
+  transition: all 0.2s ease;
+  text-align: center;
+  text-align: center;
+  color: #565656;
+  border-bottom: 3px solid #5ab4bd;
+  background-color: #d9d9d9;
+}
+.setting_tab_item:hover {
+  opacity: 0.75;
+}
+input[name="setting_tab_item"] {
+  display: none;
+}
+.tab_content {
+  display: none;
+  clear: both;
+  overflow: hidden;
+  padding: 10px 40px 0;
+}
+#ArrowObject:checked ~ #Arrow_content,
+#LineObject:checked ~ #Line_content,
+#PointObject:checked ~ #Point_content {
+  display: block;
+}
+#SettingArea input:checked + .setting_tab_item {
+  background-color: #5a95bd;
+  color: #fff;
+}
+
+#arrowForm {
+  display: inline-block;
+  margin: 20px auto;
+}
+
+.btn-add {
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #668ad8; /*ボタン色*/
+  color: #fff;
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+}
+.btn-add:active {
+  /*ボタンを押したとき*/
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px); /*下に動く*/
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2); /*影を小さく*/
+  border-bottom: none;
+}
